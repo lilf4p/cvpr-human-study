@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Video Preference Study</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <section id="intro" class="screen">
+      <h1 id="title"></h1>
+      <ul id="instructions"></ul>
+      <p class="muted" id="length"></p>
+      <label class="field">
+        Have you worked with AI image or video generation before?
+        <select id="expertise">
+          <option value="">Choose…</option>
+          <option value="none">No</option>
+          <option value="user">Yes, as a user</option>
+          <option value="researcher">Yes, as a researcher or developer</option>
+        </select>
+      </label>
+      <label class="check">
+        <input type="checkbox" id="consent">
+        I agree to take part. My answers are recorded anonymously and used only for research.
+      </label>
+      <button id="start" class="primary" disabled>Start</button>
+      <p id="resume-note" class="muted" hidden>You have an unfinished session in this browser; Start resumes it.</p>
+    </section>
+
+    <section id="trial" class="screen" hidden>
+      <div class="progress"><div id="bar"></div></div>
+      <p class="count" id="count"></p>
+      <p class="question" id="question"></p>
+      <blockquote id="prompt"></blockquote>
+      <div class="pair">
+        <figure>
+          <video id="vid-left" muted loop playsinline preload="auto"></video>
+          <figcaption>Video A</figcaption>
+        </figure>
+        <figure>
+          <video id="vid-right" muted loop playsinline preload="auto"></video>
+          <figcaption>Video B</figcaption>
+        </figure>
+      </div>
+      <div class="choices">
+        <button id="pick-left" class="choice" disabled>&larr; A is better</button>
+        <button id="pick-right" class="choice" disabled>B is better &rarr;</button>
+      </div>
+      <p class="muted center" id="wait">Watch both videos…</p>
+    </section>
+
+    <section id="done" class="screen" hidden>
+      <h1>Thank you!</h1>
+      <p>Your answers have been recorded. You can close this page.</p>
+      <p id="code" hidden></p>
+      <p id="sync" class="muted"></p>
+      <button id="download" hidden>Download my answers (JSON)</button>
+    </section>
+
+    <p id="error" class="error" hidden></p>
+  </main>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
