@@ -8,9 +8,6 @@ window.STUDY_CONFIG = {
   trialsPerParticipant: 30,
   // Earlier trials shown again later with the sides swapped, to measure consistency.
   repeatTrials: 3,
-  // Share of each participant's pairs drawn from "clean" pairs (neither clip collapsed into flat frames);
-  // the rest come from the other pairs. The analysis reweights both strata to the full pair set.
-  cleanShare: 0.8,
   // The choice buttons unlock after both clips have been on screen this long (clips are ~3 s).
   minViewMs: 3500,
 

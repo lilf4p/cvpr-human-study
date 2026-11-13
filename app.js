@@ -22,32 +22,19 @@
     return a;
   }
 
-  // Pick trialsPerParticipant pairs, an equal number per group, each prompt at most once, random
-  // sides. Within a group, a share cleanShare comes from pairs where neither clip is degenerate
-  // (pair.clean), the rest from the other pairs (the analysis reweights the two strata). Groups
-  // with the fewest clean pairs choose first, so the distinct-prompt rule does not starve them.
-  // Then repeats (sides swapped) are inserted in the second half.
+  // Pick trialsPerParticipant pairs, an equal number per group, each prompt at most once,
+  // random sides; then insert repeats (sides swapped) in the second half. Pairs are sampled
+  // uniformly, as in the VLM preference of the paper (pair.clean is only used by the analysis).
   function buildPlan(pairs) {
     const groups = [...new Set(pairs.map((p) => p.group))];
     const perGroup = Math.floor(C.trialsPerParticipant / groups.length);
-    const share = typeof C.cleanShare === "number" ? C.cleanShare : 0;
-    const nClean = Math.round(perGroup * share);
-    const isClean = (p) => p.clean !== false;
-    const nCleanOf = (g) => pairs.filter((p) => p.group === g && isClean(p)).length;
-    groups.sort((a, b) => nCleanOf(a) - nCleanOf(b));
-
-    const used = new Set();
+    const prompts = shuffle([...new Set(pairs.map((p) => p.prompt_idx))]);
+    const byKey = new Map(pairs.map((p) => [p.group + "/" + p.prompt_idx, p]));
     const trials = [];
-    for (const g of groups) {
-      const free = shuffle(pairs.filter((p) => p.group === g && !used.has(p.prompt_idx)));
-      const clean = free.filter(isClean), other = free.filter((p) => !isClean(p));
-      const take = clean.slice(0, nClean);
-      const rest = shuffle(clean.slice(nClean).concat(other));
-      // Prefer "other" pairs for the remaining slots so the degenerate stratum is sampled too.
-      rest.sort((a, b) => (isClean(a) ? 1 : 0) - (isClean(b) ? 1 : 0));
-      take.push(...rest.slice(0, perGroup - take.length));
-      for (const p of take) {
-        used.add(p.prompt_idx);
+    let k = 0;
+    for (const g of shuffle(groups.slice())) {
+      for (let n = 0; n < perGroup && k < prompts.length; n++, k++) {
+        const p = byKey.get(g + "/" + prompts[k]);
         const flip = Math.random() < 0.5;
         trials.push({ pair: p.id, left: flip ? p.v2 : p.v1, right: flip ? p.v1 : p.v2, repeat: 0 });
       }

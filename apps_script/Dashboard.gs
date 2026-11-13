@@ -3,13 +3,23 @@
 // and refreshes it every 5 minutes. The sheet menu "Study > Refresh dashboard" refreshes on demand.
 // Participant IDs listed in column A of the "exclude" tab (e.g. your own tests) are left out.
 //
-// Pairs are in two strata: clean (neither clip collapsed) and degenerate (at least one did). The site
-// oversamples clean pairs, so "overall" weights the two stratum rates by their share of all pairs.
+// Pairs are sampled uniformly, so "all pairs" is directly comparable to the paper's VLM preference.
+// Pairs are also split into clean (neither clip collapsed into flat frames) and degenerate (at least
+// one did), shown as extra columns.
 
 const DASH = "dashboard";
 const BOOT = 2000;
 const MIN_CONSISTENCY = 2 / 3;
 const NCOL = 11;
+
+// Tab. 3 of the paper (Qwen2.5-VL-7B judge, both orders, n=120 per baseline) and the same judge
+// records restricted to clean pairs (gvdm-cvpr ledger 3.66). Hard = (wins + ties/2) / n.
+const PAPER_NAMES = { base: "base", lvd_default: "LVD", compattn: "Comp-Attn" };
+const VLM = {
+  base:        { hard: 0.746, soft: 0.619, hardClean: 0.632, softClean: 0.547 },
+  lvd_default: { hard: 0.863, soft: 0.701, hardClean: 0.713, softClean: 0.608 },
+  compattn:    { hard: 0.588, soft: 0.557, hardClean: 0.505, softClean: 0.510 },
+};
 
 function onOpen() {
   SpreadsheetApp.getUi().createMenu("Study").addItem("Refresh dashboard", "updateDashboard").addToUi();
@@ -64,7 +74,7 @@ function median_(a) {
   return s[Math.floor(s.length / 2)];
 }
 
-// Per baseline: {clean, degenerate, overall} ours-preferred rates for a list of participant ids.
+// Per baseline: {clean, degenerate, overall (all pairs)} ours-preferred rates for a list of participant ids.
 function stratRates_(people, ids) {
   const win = {}, tot = {};
   for (const id of ids) {
@@ -82,10 +92,8 @@ function stratRates_(people, ids) {
       r[s + "_n"] = tot[k] || 0;
       if (tot[k]) r[s] = win[k] / tot[k];
     }
-    if (r.clean !== undefined && r.degenerate !== undefined) {
-      const w = KEY_CLEAN_SHARE[g];
-      r.overall = w * r.clean + (1 - w) * r.degenerate;
-    }
+    const nAll = r.clean_n + r.degenerate_n;
+    if (nAll) r.overall = ((win[g + "/clean"] || 0) + (win[g + "/degenerate"] || 0)) / nAll;
     out[g] = r;
   }
   return out;
@@ -117,6 +125,17 @@ function table_(people, ids) {
 
 function pad_(row) { while (row.length < NCOL) row.push(""); return row.slice(0, NCOL); }
 
+// Paper-style table: one row per baseline, VLM (paper) next to human rates of the second table.
+function paperTable_(points) {
+  return Object.keys(KEY_GROUPS).map((g, i) => {
+    const b = KEY_GROUPS[g], v = VLM[b] || {}, h = points[i];
+    const cell = (x) => (x === undefined ? "" : x);
+    return pad_([PAPER_NAMES[b] || b, v.hard ?? "", v.soft ?? "", v.hardClean ?? "", v.softClean ?? "",
+                 cell(h[9]), h[10] === "" ? "" : h[10].toFixed(2) + "-" + h[11].toFixed(2),
+                 cell(h[2]), h[3] === "" ? "" : h[3].toFixed(2) + "-" + h[4].toFixed(2), h[1]]);
+  });
+}
+
 function updateDashboard() {
   const ss = SpreadsheetApp.getActiveSpreadsheet();
   if (!ss.getSheetByName("exclude")) ss.insertSheet("exclude").getRange("A1").setValue("participant IDs to leave out (one per row, from A2)");
@@ -127,62 +146,77 @@ function updateDashboard() {
   const nAnswers = all.reduce((s, id) => s + people[id].answers, 0);
   const cons = all.map((id) => people[id].consistency).filter((c) => c !== null);
   const head = ["Ours preferred over", "Clean pairs: n", "rate", "CI low", "CI high",
-                "Degenerate pairs: n", "rate", "CI low", "CI high", "Overall (reweighted)", "CI low / high"];
+                "Degenerate pairs: n", "rate", "CI low", "CI high", "All pairs", "CI low / high"];
   const fmt = (rows) => rows.map((r) => pad_([r[0], r[1], r[2], r[3], r[4], r[5], r[6], r[7], r[8], r[9],
     r[10] === "" ? "" : r[10].toFixed(3) + " / " + r[11].toFixed(3)]));
   const nG = Object.keys(KEY_GROUPS).length;
+  const tAll = table_(people, all), tClean = table_(people, clean);
 
-  const rows = [
-    pad_(["Human preference study: " + KEY_OURS + " vs baselines"]),
-    pad_(["Updated", new Date()]),
+  // Build the sheet section by section, remembering where each table lands for formatting.
+  const rows = [];
+  const at = {};
+  const add = (name, rs) => { at[name] = rows.length + 1; rows.push(...rs); };
+  add("title", [pad_(["Human preference study: " + KEY_OURS + " vs baselines"]), pad_(["Updated", new Date()]),
     pad_(["Participants (any answer)", all.length, "completed", all.filter((id) => people[id].complete).length,
           "answers", nAnswers, "mean repeat consistency", cons.length ? cons.reduce((a, b) => a + b, 0) / cons.length : ""]),
-    pad_(["Clean = neither clip collapsed (flat frames). Overall = clean and degenerate rates weighted by their share of all pairs."]),
-    pad_(["All participants"]),
-    pad_(head),
-    ...fmt(table_(people, all)),
-    pad_([]),
-    pad_(["Complete and consistent participants (repeat agreement >= 2/3)"]),
-    pad_(head),
-    ...fmt(table_(people, clean)),
-    pad_([]),
-    pad_(["Participant", "Expertise", "Answers", "Complete", "Repeat consistency", "Median time per pair (s)",
-          "Last answer", "In second table"]),
-  ];
+    pad_(["Clean = neither clip collapsed (flat frames). All pairs = every answered pair, as in the paper."]),
+    pad_([])]);
+  add("paperTitle", [pad_(["Paper Tab. 3 view, CogVideoX-5b (human = complete and consistent participants; >0.5 favours ours)"])]);
+  add("paperHead", [pad_(["Ours vs.", "VLM hard (paper)", "VLM soft (paper)", "VLM hard, clean pairs", "VLM soft, clean pairs",
+                          "Human, all pairs", "95% CI", "Human, clean pairs", "95% CI", "Human n (clean)"])]);
+  add("paper", paperTable_(tClean));
+  add("gap1", [pad_([])]);
+  add("allTitle", [pad_(["All participants"])]);
+  add("allHead", [pad_(head)]);
+  add("all", fmt(tAll));
+  add("gap2", [pad_([])]);
+  add("cleanTitle", [pad_(["Complete and consistent participants (repeat agreement >= 2/3)"])]);
+  add("cleanHead", [pad_(head)]);
+  add("clean", fmt(tClean));
+  add("gap3", [pad_([])]);
+  add("pHead", [pad_(["Participant", "Expertise", "Answers", "Complete", "Repeat consistency", "Median time per pair (s)",
+                      "Last answer", "In second table"])]);
   const ids = Object.keys(people).sort((a, b) => (people[b].last > people[a].last ? 1 : -1));
-  for (const id of ids) {
+  add("people", ids.map((id) => {
     const p = people[id];
-    rows.push(pad_([id, p.expertise, p.answers, p.complete, p.consistency === null ? "" : p.consistency,
-                    p.medianRt === "" ? "" : p.medianRt / 1000, p.last, clean.includes(id)]));
-  }
+    return pad_([id, p.expertise, p.answers, p.complete, p.consistency === null ? "" : p.consistency,
+                 p.medianRt === "" ? "" : p.medianRt / 1000, p.last, clean.includes(id)]);
+  }));
 
   const sh = ss.getSheetByName(DASH) || ss.insertSheet(DASH, 0);
   sh.clear();
   for (const c of sh.getCharts()) sh.removeChart(c);
   sh.getRange(1, 1, rows.length, NCOL).setValues(rows);
 
-  const t1 = 7, t2 = t1 + nG + 3, tp = t2 + nG + 2;  // first data row of each table
-  sh.getRange("A1").setFontWeight("bold").setFontSize(14);
-  sh.getRange("A4").setFontStyle("italic").setFontColor("#646b78");
-  for (const r of [t1 - 2, t2 - 2]) sh.getRange(r, 1).setFontWeight("bold").setFontSize(12);
-  for (const r of [t1 - 1, t2 - 1, tp - 1]) {
-    sh.getRange(r, 1, 1, NCOL).setFontWeight("bold").setBackground("#ecebfd");
+  sh.getRange(at.title, 1).setFontWeight("bold").setFontSize(14);
+  sh.getRange(at.title + 3, 1).setFontStyle("italic").setFontColor("#646b78");
+  for (const k of ["paperTitle", "allTitle", "cleanTitle"]) sh.getRange(at[k], 1).setFontWeight("bold").setFontSize(12);
+  for (const k of ["paperHead", "allHead", "cleanHead", "pHead"]) {
+    sh.getRange(at[k], 1, 1, NCOL).setFontWeight("bold").setBackground("#ecebfd");
   }
-  for (const r of [t1, t2]) {
-    for (const c of [3, 4, 5, 7, 8, 9, 10]) sh.getRange(r, c, nG, 1).setNumberFormat("0.000");
-    sh.getRange(r, 10, nG, 1).setFontWeight("bold");
+  for (const k of ["all", "clean"]) {
+    for (const c of [3, 4, 5, 7, 8, 9, 10]) sh.getRange(at[k], c, nG, 1).setNumberFormat("0.000");
+    sh.getRange(at[k], 10, nG, 1).setFontWeight("bold");
   }
-  sh.getRange("H3").setNumberFormat("0.00");
-  sh.setFrozenRows(0);
+  // Paper view: three decimals, green above 0.5 and red below, as \win / \lose in the paper.
+  for (const c of [2, 3, 4, 5, 6, 8]) {
+    const r = sh.getRange(at.paper, c, nG, 1);
+    r.setNumberFormat("0.000");
+    const vals = r.getValues();
+    r.setFontColors(vals.map(([x]) => [x === "" ? "#000000" : x > 0.5 ? "#1f7a4d" : x < 0.5 ? "#c0392b" : "#000000"]));
+    r.setFontWeight("bold");
+  }
+  sh.getRange(at.paper, 1, nG, NCOL).setBorder(null, null, true, null, null, null);
+  sh.getRange(at.title + 2, 8).setNumberFormat("0.00");
   sh.autoResizeColumns(1, NCOL);
 
-  // Clean-pair rate per baseline, all participants; 0.5 = no preference.
+  // Clean-pair and all-pair rate per baseline, all participants; 0.5 = no preference.
   const chart = sh.newChart().asColumnChart()
-    .addRange(sh.getRange(t1 - 1, 1, nG + 1, 1)).addRange(sh.getRange(t1 - 1, 3, nG + 1, 1))
-    .addRange(sh.getRange(t1 - 1, 10, nG + 1, 1))
-    .setOption("title", "Ours preferred (all participants): clean pairs vs overall; 0.5 = no preference")
+    .addRange(sh.getRange(at.allHead, 1, nG + 1, 1)).addRange(sh.getRange(at.allHead, 3, nG + 1, 1))
+    .addRange(sh.getRange(at.allHead, 10, nG + 1, 1))
+    .setOption("title", "Ours preferred (all participants): clean pairs vs all pairs; 0.5 = no preference")
     .setOption("vAxis", { viewWindow: { min: 0, max: 1 } })
-    .setOption("series", { 0: { labelInLegend: "clean pairs" }, 1: { labelInLegend: "overall (reweighted)" } })
-    .setPosition(tp + ids.length + 2, 1, 0, 0).build();
+    .setOption("series", { 0: { labelInLegend: "clean pairs" }, 1: { labelInLegend: "all pairs" } })
+    .setPosition(at.people + ids.length + 2, 1, 0, 0).build();
   sh.insertChart(chart);
 }

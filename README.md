@@ -53,9 +53,9 @@ In the same Apps Script project add two files: `Dashboard.gs` (from `apps_script
 (generated next to the private key, never committed here). Run `installDashboard` once from the
 editor and authorize it. A `dashboard` tab then shows the ours-preferred rate per baseline with 95%
 bootstrap CIs, for all participants and for complete + consistent ones, plus one row per
-participant. Rates are split into clean pairs (neither clip collapsed into flat frames) and
-degenerate pairs, plus an overall rate reweighted to the full pair set, since the site shows clean
-pairs more often (`cleanShare` in `config.js`). It refreshes every 5 minutes, or from the sheet menu Study > Refresh dashboard. Put
+participant. Pairs are sampled uniformly, so the all-pairs rate is comparable to the paper's VLM
+preference; it is also split into clean pairs (neither clip collapsed into flat frames) and degenerate
+pairs. A Tab. 3-style section puts the paper's VLM numbers next to the human ones. It refreshes every 5 minutes, or from the sheet menu Study > Refresh dashboard. Put
 test participant IDs in the `exclude` tab to leave them out.
 
 ## Analysis
