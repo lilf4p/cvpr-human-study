@@ -5,57 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
   <title>Video Preference Study</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <header class="topbar">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><rect x="2" y="5" width="9" height="14" rx="2.5"/><rect x="13" y="5" width="9" height="14" rx="2.5"/></svg>
+      <span>Video Preference Study</span>
+    </div>
+    <div class="status" id="status" hidden>
+      <span id="count"></span>
+      <div class="progress"><div id="bar"></div></div>
+    </div>
+  </header>
+
   <main>
-    <section id="intro" class="screen">
+    <section id="intro" class="screen card narrow">
+      <p class="eyebrow">Research study</p>
       <h1 id="title"></h1>
-      <ul id="instructions"></ul>
-      <p class="muted" id="length"></p>
-      <label class="field">
-        Have you worked with AI image or video generation before?
-        <select id="expertise">
-          <option value="">Choose…</option>
-          <option value="none">No</option>
-          <option value="user">Yes, as a user</option>
-          <option value="researcher">Yes, as a researcher or developer</option>
-        </select>
-      </label>
-      <label class="check">
-        <input type="checkbox" id="consent">
-        I agree to take part. My answers are recorded anonymously and used only for research.
-      </label>
-      <button id="start" class="primary" disabled>Start</button>
-      <p id="resume-note" class="muted" hidden>You have an unfinished session in this browser; Start resumes it.</p>
+      <p class="lead" id="lead"></p>
+      <div class="chips">
+        <span class="chip" id="chip-time"></span>
+        <span class="chip" id="chip-pairs"></span>
+        <span class="chip">Anonymous</span>
+      </div>
+      <ol class="steps" id="instructions"></ol>
+      <div class="form">
+        <label class="field" for="expertise">Have you worked with AI image or video generation before?</label>
+        <div class="segmented" id="expertise" role="radiogroup">
+          <button type="button" data-v="none" role="radio" aria-checked="false">No</button>
+          <button type="button" data-v="user" role="radio" aria-checked="false">Yes, as a user</button>
+          <button type="button" data-v="researcher" role="radio" aria-checked="false">Yes, as a researcher</button>
+        </div>
+        <label class="check">
+          <input type="checkbox" id="consent">
+          <span>I agree to take part. My answers are recorded anonymously and used only for research.</span>
+        </label>
+      </div>
+      <button id="start" class="primary big" disabled>Start</button>
+      <p id="resume-note" class="muted" hidden>You have an unfinished session in this browser. Start picks up where you left off.</p>
     </section>
 
     <section id="trial" class="screen" hidden>
-      <div class="progress"><div id="bar"></div></div>
-      <p class="count" id="count"></p>
-      <p class="question" id="question"></p>
-      <blockquote id="prompt"></blockquote>
-      <div class="pair">
-        <figure>
-          <video id="vid-left" muted loop playsinline preload="auto"></video>
-          <figcaption>Video A</figcaption>
-        </figure>
-        <figure>
-          <video id="vid-right" muted loop playsinline preload="auto"></video>
-          <figcaption>Video B</figcaption>
-        </figure>
+      <div class="prompt-card">
+        <p class="eyebrow" id="question"></p>
+        <p class="prompt" id="prompt"></p>
       </div>
-      <div class="choices">
-        <button id="pick-left" class="choice" disabled>&larr; A is better</button>
-        <button id="pick-right" class="choice" disabled>B is better &rarr;</button>
+      <div class="pair" id="pair">
+        <div class="option" id="opt-left">
+          <div class="frame">
+            <video id="vid-left" muted loop playsinline preload="auto"></video>
+            <span class="badge">A</span>
+          </div>
+          <button id="pick-left" class="choice" disabled><kbd>&larr;</kbd> I prefer A</button>
+        </div>
+        <div class="option" id="opt-right">
+          <div class="frame">
+            <video id="vid-right" muted loop playsinline preload="auto"></video>
+            <span class="badge">B</span>
+          </div>
+          <button id="pick-right" class="choice" disabled>I prefer B <kbd>&rarr;</kbd></button>
+        </div>
       </div>
-      <p class="muted center" id="wait">Watch both videos…</p>
+      <div class="unlock">
+        <div class="unlock-track"><div id="unlock-bar"></div></div>
+        <p class="muted" id="wait">Watch both videos…</p>
+      </div>
     </section>
 
-    <section id="done" class="screen" hidden>
+    <section id="done" class="screen card narrow center" hidden>
+      <div class="tick" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="34" height="34"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+      </div>
       <h1>Thank you!</h1>
-      <p>Your answers have been recorded. You can close this page.</p>
-      <p id="code" hidden></p>
+      <p class="lead">Your answers have been recorded. You can close this page.</p>
+      <p id="code" class="code" hidden></p>
       <p id="sync" class="muted"></p>
       <button id="download" hidden>Download my answers (JSON)</button>
     </section>

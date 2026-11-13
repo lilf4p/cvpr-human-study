@@ -47,6 +47,17 @@ python3 -m http.server 8000   # then open http://localhost:8000
 With `endpoint` empty the page runs in test mode and offers the answers as a JSON download at the
 end. Progress is kept in the browser (localStorage); clear site data to start a new session.
 
+## Live dashboard (private)
+
+In the same Apps Script project add two files: `Dashboard.gs` (from `apps_script/`) and `Key.gs`
+(generated next to the private key, never committed here). Run `installDashboard` once from the
+editor and authorize it. A `dashboard` tab then shows the ours-preferred rate per baseline with 95%
+bootstrap CIs, for all participants and for complete + consistent ones, plus one row per
+participant. Rates are split into clean pairs (neither clip collapsed into flat frames) and
+degenerate pairs, plus an overall rate reweighted to the full pair set, since the site shows clean
+pairs more often (`cleanShare` in `config.js`). It refreshes every 5 minutes, or from the sheet menu Study > Refresh dashboard. Put
+test participant IDs in the `exclude` tab to leave them out.
+
 ## Analysis
 
 Export the `responses` tab as CSV and run, in the code repository:

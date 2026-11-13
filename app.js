@@ -22,18 +22,32 @@
     return a;
   }
 
-  // Pick trialsPerParticipant pairs, an equal number per group, each prompt at most once,
-  // random sides; then insert repeats (sides swapped) in the second half.
+  // Pick trialsPerParticipant pairs, an equal number per group, each prompt at most once, random
+  // sides. Within a group, a share cleanShare comes from pairs where neither clip is degenerate
+  // (pair.clean), the rest from the other pairs (the analysis reweights the two strata). Groups
+  // with the fewest clean pairs choose first, so the distinct-prompt rule does not starve them.
+  // Then repeats (sides swapped) are inserted in the second half.
   function buildPlan(pairs) {
     const groups = [...new Set(pairs.map((p) => p.group))];
     const perGroup = Math.floor(C.trialsPerParticipant / groups.length);
-    const prompts = shuffle([...new Set(pairs.map((p) => p.prompt_idx))]);
-    const byKey = new Map(pairs.map((p) => [p.group + "/" + p.prompt_idx, p]));
+    const share = typeof C.cleanShare === "number" ? C.cleanShare : 0;
+    const nClean = Math.round(perGroup * share);
+    const isClean = (p) => p.clean !== false;
+    const nCleanOf = (g) => pairs.filter((p) => p.group === g && isClean(p)).length;
+    groups.sort((a, b) => nCleanOf(a) - nCleanOf(b));
+
+    const used = new Set();
     const trials = [];
-    let k = 0;
-    for (const g of shuffle(groups.slice())) {
-      for (let n = 0; n < perGroup && k < prompts.length; n++, k++) {
-        const p = byKey.get(g + "/" + prompts[k]);
+    for (const g of groups) {
+      const free = shuffle(pairs.filter((p) => p.group === g && !used.has(p.prompt_idx)));
+      const clean = free.filter(isClean), other = free.filter((p) => !isClean(p));
+      const take = clean.slice(0, nClean);
+      const rest = shuffle(clean.slice(nClean).concat(other));
+      // Prefer "other" pairs for the remaining slots so the degenerate stratum is sampled too.
+      rest.sort((a, b) => (isClean(a) ? 1 : 0) - (isClean(b) ? 1 : 0));
+      take.push(...rest.slice(0, perGroup - take.length));
+      for (const p of take) {
+        used.add(p.prompt_idx);
         const flip = Math.random() < 0.5;
         trials.push({ pair: p.id, left: flip ? p.v2 : p.v1, right: flip ? p.v1 : p.v2, repeat: 0 });
       }
@@ -54,6 +68,7 @@
   let S = null; // session state, persisted
   let shownAt = 0;
   let unlockTimer = null;
+  let expertise = "";
 
   function save() { store.set(STORE, S); }
 
@@ -93,13 +108,24 @@
 
   function show(id) {
     for (const s of document.querySelectorAll(".screen")) s.hidden = s.id !== id;
+    $("status").hidden = id !== "trial";
     window.scrollTo(0, 0);
   }
 
   function lock(on) {
     $("pick-left").disabled = on;
     $("pick-right").disabled = on;
-    $("wait").style.visibility = on ? "visible" : "hidden";
+    $("wait").textContent = on ? "Watch both videos…" : "Choose the video you prefer";
+  }
+
+  function startUnlock(ms) {
+    const bar = $("unlock-bar");
+    bar.style.transition = "none";
+    bar.style.width = "0";
+    void bar.offsetWidth; // restart the transition
+    bar.style.transition = `width ${ms}ms linear`;
+    bar.style.width = "100%";
+    unlockTimer = setTimeout(() => lock(false), ms);
   }
 
   function loadVideo(el, file) {
@@ -120,34 +146,45 @@
     for (const f of [t.left, t.right]) fetch("videos/" + f).catch(() => {});
   }
 
+  function setProgress() {
+    $("bar").style.width = (100 * S.i / S.trials.length) + "%";
+    $("count").textContent = `${Math.min(S.i + 1, S.trials.length)} / ${S.trials.length}`;
+  }
+
   async function showTrial() {
     if (S.i >= S.trials.length) return finish();
     const t = S.trials[S.i];
     const p = pairsById.get(t.pair);
     lock(true);
     clearTimeout(unlockTimer);
-    $("bar").style.width = (100 * S.i / S.trials.length) + "%";
-    $("count").textContent = `Pair ${S.i + 1} of ${S.trials.length}`;
+    $("unlock-bar").style.transition = "none";
+    $("unlock-bar").style.width = "0";
+    setProgress();
+    $("pair").classList.add("loading");
     $("prompt").textContent = "“" + p.prompt + "”";
     const L = $("vid-left"), R = $("vid-right");
     await Promise.all([loadVideo(L, t.left), loadVideo(R, t.right)]);
+    $("pair").classList.remove("loading");
+    for (const o of ["opt-left", "opt-right"]) $(o).classList.remove("picked");
     L.currentTime = 0; R.currentTime = 0;
     await Promise.allSettled([L.play(), R.play()]);
     shownAt = performance.now();
-    unlockTimer = setTimeout(() => lock(false), C.minViewMs);
+    startUnlock(C.minViewMs);
     preload(S.trials[S.i + 1]);
   }
 
   function choose(side) {
     if ($("pick-left").disabled) return;
+    const rt = Math.round(performance.now() - shownAt);
     lock(true);
+    $(side === "left" ? "opt-left" : "opt-right").classList.add("picked");
     const t = S.trials[S.i];
     const p = pairsById.get(t.pair);
     const row = {
       participant: S.participant, session_started: S.started, expertise: S.expertise,
       trial: S.i, n_trials: S.trials.length, pair_id: t.pair, prompt_idx: p.prompt_idx, group: p.group,
       left: t.left, right: t.right, chosen: side === "left" ? t.left : t.right, side,
-      repeat: t.repeat, rt_ms: Math.round(performance.now() - shownAt),
+      repeat: t.repeat, rt_ms: rt,
       client_time: new Date().toISOString(), viewport: innerWidth + "x" + innerHeight,
       user_agent: navigator.userAgent,
     };
@@ -155,7 +192,8 @@
     S.i += 1;
     save();
     enqueue(row);
-    showTrial();
+    setProgress();
+    setTimeout(showTrial, 280); // brief highlight of the pick
   }
 
   function finish() {
@@ -182,12 +220,14 @@
 
   async function init() {
     $("title").textContent = C.title;
+    $("lead").textContent = C.lead || "";
     $("question").textContent = C.question;
     for (const s of C.instructions) {
       const li = document.createElement("li"); li.textContent = s; $("instructions").appendChild(li);
     }
     const nTotal = C.trialsPerParticipant + C.repeatTrials;
-    $("length").textContent = `${nTotal} pairs, about ${Math.ceil(nTotal * 12 / 60)} minutes.`;
+    $("chip-time").textContent = `About ${Math.ceil(nTotal * 12 / 60)} minutes`;
+    $("chip-pairs").textContent = `${nTotal} video pairs`;
 
     let data;
     try {
@@ -199,12 +239,18 @@
     }
     pairsById = new Map(data.pairs.map((p) => [p.id, p]));
 
-    const ready = () => { $("start").disabled = !($("consent").checked && $("expertise").value); };
+    const ready = () => { $("start").disabled = !($("consent").checked && (expertise || S)); };
+    for (const b of $("expertise").querySelectorAll("button")) {
+      b.addEventListener("click", () => {
+        expertise = b.dataset.v;
+        for (const o of $("expertise").querySelectorAll("button")) o.setAttribute("aria-checked", String(o === b));
+        ready();
+      });
+    }
     $("consent").addEventListener("change", ready);
-    $("expertise").addEventListener("change", ready);
     $("start").addEventListener("click", () => {
       if (!S) {
-        S = { participant: uuid(), started: new Date().toISOString(), expertise: $("expertise").value,
+        S = { participant: uuid(), started: new Date().toISOString(), expertise,
               trials: buildPlan(data.pairs), i: 0, answers: [] };
         save();
       }
