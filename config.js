@@ -5,7 +5,7 @@ window.STUDY_CONFIG = {
   endpoint: "https://script.google.com/macros/s/AKfycbwWRlAkhOeMev13Yneo0UWKWqwlFJlRC4QIuvju5nDXjx59z9OJtPyowqV7GALSnjM/exec",
 
   // Pairs per participant, split evenly over the comparison groups (one prompt is never shown twice).
-  trialsPerParticipant: 30,
+  trialsPerParticipant: 40,
   // Earlier trials shown again later with the sides swapped, to measure consistency.
   repeatTrials: 3,
   // The choice buttons unlock after both clips have been on screen this long (clips are ~3 s).

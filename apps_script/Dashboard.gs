@@ -14,11 +14,14 @@ const NCOL = 11;
 
 // Tab. 3 of the paper (Qwen2.5-VL-7B judge, both orders, n=120 per baseline) and the same judge
 // records restricted to clean pairs (gvdm-cvpr ledger 3.66). Hard = (wins + ties/2) / n.
-const PAPER_NAMES = { base: "base", lvd_default: "LVD", compattn: "Comp-Attn" };
+const PAPER_NAMES = { base: "base", lvd_default: "LVD", compattn: "Comp-Attn",
+                      videotetris_10fps: "VideoTetris (VideoCrafter2)", ttom72b: "TTOM (Wan2.1-14B)" };
 const VLM = {
   base:        { hard: 0.746, soft: 0.619, hardClean: 0.632, softClean: 0.547 },
   lvd_default: { hard: 0.863, soft: 0.701, hardClean: 0.713, softClean: 0.608 },
   compattn:    { hard: 0.588, soft: 0.557, hardClean: 0.505, softClean: 0.510 },
+  videotetris_10fps: { hard: 0.647, soft: 0.574, hardClean: 0.653, softClean: 0.577 },  // n=119 (no clip for prompt 45)
+  ttom72b:     { hard: 0.438, soft: 0.471, hardClean: 0.441, softClean: 0.473 },
 };
 
 function onOpen() {
@@ -161,7 +164,7 @@ function updateDashboard() {
           "answers", nAnswers, "mean repeat consistency", cons.length ? cons.reduce((a, b) => a + b, 0) / cons.length : ""]),
     pad_(["Clean = neither clip collapsed (flat frames). All pairs = every answered pair, as in the paper."]),
     pad_([])]);
-  add("paperTitle", [pad_(["Paper Tab. 3 view, CogVideoX-5b (human = complete and consistent participants; >0.5 favours ours)"])]);
+  add("paperTitle", [pad_(["Paper Tab. 3 view, ours on CogVideoX-5b (human = complete and consistent participants; >0.5 favours ours)"])]);
   add("paperHead", [pad_(["Ours vs.", "VLM hard (paper)", "VLM soft (paper)", "VLM hard, clean pairs", "VLM soft, clean pairs",
                           "Human, all pairs", "95% CI", "Human, clean pairs", "95% CI", "Human n (clean)"])]);
   add("paper", paperTable_(tClean));

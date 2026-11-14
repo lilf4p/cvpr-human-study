@@ -3240,6 +3240,2157 @@
    "v2": "455596b73864a11a.mp4",
    "group": "3aaec3",
    "clean": false
+  },
+  {
+   "id": "e386e34ef5",
+   "prompt_idx": 0,
+   "prompt": "a laptop to the left of a mug and to the right of a lamp",
+   "v1": "994a1170c2067429.mp4",
+   "v2": "1fb474223b2d5d14.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "ee7e35abff",
+   "prompt_idx": 1,
+   "prompt": "a plate to the left of a cup and in front of a bottle",
+   "v1": "e57f2222acf67fdc.mp4",
+   "v2": "1006e5d3bf309ec4.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "1c1029d4d9",
+   "prompt_idx": 2,
+   "prompt": "a book below a pen and to the left of a clock",
+   "v1": "692bd5d9f8341dd3.mp4",
+   "v2": "e8ed0f50d58b06b8.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "2ee776279d",
+   "prompt_idx": 3,
+   "prompt": "a cat to the left of a dog and to the right of a ball",
+   "v1": "8dc7615ac25d47a3.mp4",
+   "v2": "a5855d8e7c72a66c.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "45fd2dc7e3",
+   "prompt_idx": 4,
+   "prompt": "a cup to the right of a plate and to the left of a fork",
+   "v1": "878718f5c5ca37c5.mp4",
+   "v2": "5e0da56cd3f8747b.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "1ca775ec6f",
+   "prompt_idx": 5,
+   "prompt": "a keyboard to the left of a mouse and below a monitor",
+   "v1": "d1aef0b4cd831f81.mp4",
+   "v2": "c084c804b64f5c2f.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "d7f8158330",
+   "prompt_idx": 6,
+   "prompt": "a vase to the left of a book and to the right of a lamp",
+   "v1": "82f57255eca3977c.mp4",
+   "v2": "93419aa4ee3d3a9a.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "3686e2a2a2",
+   "prompt_idx": 7,
+   "prompt": "a bottle behind a glass and to the left of a plate",
+   "v1": "95952ce2e3c97972.mp4",
+   "v2": "7736345a2c86bed0.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "38878e1a8a",
+   "prompt_idx": 8,
+   "prompt": "an apple to the left of a banana and in front of a bowl",
+   "v1": "322a76645f4e74f2.mp4",
+   "v2": "88afa5ebc19d7aad.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "46e87ccffb",
+   "prompt_idx": 9,
+   "prompt": "a car to the left of a tree and to the right of a person",
+   "v1": "b22c2d6af6e32142.mp4",
+   "v2": "360fd6421359bf0a.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "e026270c87",
+   "prompt_idx": 10,
+   "prompt": "a bicycle to the left of a bench and to the right of a dog",
+   "v1": "2b2050bda80d0185.mp4",
+   "v2": "7f07bd2a4107ecff.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "35ae591830",
+   "prompt_idx": 11,
+   "prompt": "a phone above a book and to the right of a cup",
+   "v1": "f40268c5719a40f8.mp4",
+   "v2": "293bc055b50f4711.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "563fcea2bf",
+   "prompt_idx": 12,
+   "prompt": "a spoon to the left of a bowl and to the right of a cup",
+   "v1": "93588e0b373764d4.mp4",
+   "v2": "411cde9dd5ad6bd3.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "39dc2e4234",
+   "prompt_idx": 13,
+   "prompt": "a hat above a bag and to the left of a shoe",
+   "v1": "562512e815ab468a.mp4",
+   "v2": "91ff72e75f5f11b6.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "8d6c7155db",
+   "prompt_idx": 14,
+   "prompt": "a pillow above a sofa and in front of a cat",
+   "v1": "84972a38d681c078.mp4",
+   "v2": "93bd6af09f019d99.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "704d7eb243",
+   "prompt_idx": 15,
+   "prompt": "a bird above a fence and behind a cat",
+   "v1": "840d3b5e011ad573.mp4",
+   "v2": "97307cb55a48668f.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "e77e1a7d3b",
+   "prompt_idx": 16,
+   "prompt": "a horse behind a fence and to the left of a tree",
+   "v1": "53a3440a44b311c7.mp4",
+   "v2": "1649b903ab7314d0.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "48aa5bf5de",
+   "prompt_idx": 17,
+   "prompt": "a chair to the left of a table and behind a laptop",
+   "v1": "543df43f8597d97e.mp4",
+   "v2": "93dfbbcced4a5d5c.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "0aad576770",
+   "prompt_idx": 18,
+   "prompt": "a teddy bear to the left of a pillow and in front of a book",
+   "v1": "8c1591cb817c674c.mp4",
+   "v2": "27b455c116ebbee9.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "6e3c2d0844",
+   "prompt_idx": 19,
+   "prompt": "a banana to the left of an apple and above a plate",
+   "v1": "993c8b95976e05ce.mp4",
+   "v2": "bb5ee636ce128077.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "522fdec8fa",
+   "prompt_idx": 20,
+   "prompt": "a dog to the left of a frisbee and behind a tree",
+   "v1": "6322450ac70452ea.mp4",
+   "v2": "e186ff4aa2a2124d.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "e1c8b8b7e4",
+   "prompt_idx": 21,
+   "prompt": "a mug to the left of a laptop and in front of a phone",
+   "v1": "4cfcd9e71e8bdfba.mp4",
+   "v2": "cd36ecaeab683aab.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "0632b1a8fe",
+   "prompt_idx": 22,
+   "prompt": "a kite above a child and to the right of a tree",
+   "v1": "00d5053ca8c14d71.mp4",
+   "v2": "d64a5bc6a2f75c29.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "f7dfa9a469",
+   "prompt_idx": 23,
+   "prompt": "a boat to the left of a dock and behind a bird",
+   "v1": "88faedf05ce340d0.mp4",
+   "v2": "0daacc8f24c552f5.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "2ee17920aa",
+   "prompt_idx": 24,
+   "prompt": "a candle above a plate and to the left of a cup",
+   "v1": "ecbbfd1b5c695c0d.mp4",
+   "v2": "6bda26830db4312b.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "33f420f2ad",
+   "prompt_idx": 25,
+   "prompt": "a lamp above a desk and to the left of a chair",
+   "v1": "9e782cb2b7b02550.mp4",
+   "v2": "cffef8d4a2a86473.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "7cb02c7b30",
+   "prompt_idx": 26,
+   "prompt": "a bowl to the right of a spoon and to the left of a napkin",
+   "v1": "8102d24b191d38b8.mp4",
+   "v2": "9e23979a46c00202.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "d25ebdd05c",
+   "prompt_idx": 27,
+   "prompt": "a bottle to the left of a cup and to the right of a bowl",
+   "v1": "9aadf89f8b65843f.mp4",
+   "v2": "b199d475747417fe.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "f6096f9e76",
+   "prompt_idx": 28,
+   "prompt": "a clock to the left of a picture and above a shelf",
+   "v1": "c0d0425fed11ddfd.mp4",
+   "v2": "2c49fe5d1d67e31a.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "cc5cac6491",
+   "prompt_idx": 29,
+   "prompt": "an umbrella above a bench and to the left of a dog",
+   "v1": "23fd3f5023931280.mp4",
+   "v2": "9c2dcd4018ced087.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "7ecd3b7bf9",
+   "prompt_idx": 30,
+   "prompt": "a cat in front of a basket and behind a window",
+   "v1": "98361ed273b8595f.mp4",
+   "v2": "46ac066e828ce2f7.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "4c459046ed",
+   "prompt_idx": 31,
+   "prompt": "a plate to the left of a knife and to the right of a fork",
+   "v1": "28e1efc3e9e3d219.mp4",
+   "v2": "3cb5a34b2a8c719f.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "9c2fbec5ba",
+   "prompt_idx": 32,
+   "prompt": "a book to the left of a laptop and to the right of a mug",
+   "v1": "53d8feb7862a4cc7.mp4",
+   "v2": "d255b2d0d166ea25.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "74ee524211",
+   "prompt_idx": 33,
+   "prompt": "an apple above a plate and to the right of a glass",
+   "v1": "de7a48082a1daab7.mp4",
+   "v2": "664259bad6957e61.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "78f286db07",
+   "prompt_idx": 34,
+   "prompt": "a ball to the left of a dog and behind a fence",
+   "v1": "f5dff9bb1a1b3120.mp4",
+   "v2": "7e1da40ec2b82fe0.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "b2ba46e38b",
+   "prompt_idx": 35,
+   "prompt": "a flower above a vase and in front of a table",
+   "v1": "b30c338c9d4d506e.mp4",
+   "v2": "3341ce7cad08f8f7.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "c2752db42e",
+   "prompt_idx": 36,
+   "prompt": "a cup above a saucer and to the right of a spoon",
+   "v1": "3f4d15d0b83ff67e.mp4",
+   "v2": "1b15eee54b4aaa98.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "e1d74b54d2",
+   "prompt_idx": 37,
+   "prompt": "a bird in front of a branch and behind a sky",
+   "v1": "5132e00737833d84.mp4",
+   "v2": "334a83abe3518d41.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "e9c380b286",
+   "prompt_idx": 38,
+   "prompt": "a shoe to the left of a mat and behind a door",
+   "v1": "8ad1eee2227d7402.mp4",
+   "v2": "0ebc257ce80e92cb.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "26ce0c2f1c",
+   "prompt_idx": 39,
+   "prompt": "a sandwich above a plate and to the right of a cup",
+   "v1": "fed93e1c45756df1.mp4",
+   "v2": "a8adae6772f46b37.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "5232d00c53",
+   "prompt_idx": 40,
+   "prompt": "a teddy bear above a pillow and in front of a slipper",
+   "v1": "abb8d43384a917fd.mp4",
+   "v2": "3ee47a90442ceeef.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "56149a45bd",
+   "prompt_idx": 41,
+   "prompt": "a frisbee above an apple and in front of a hat",
+   "v1": "992f381160d44661.mp4",
+   "v2": "57c5e4945e830ea5.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "7fc26adc75",
+   "prompt_idx": 42,
+   "prompt": "a basket to the right of a blanket and in front of a frisbee",
+   "v1": "4550619726f0034a.mp4",
+   "v2": "6fb6f31a4fe8038b.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "e12c18f8e7",
+   "prompt_idx": 43,
+   "prompt": "a kettle below a jar and to the right of a basket",
+   "v1": "5348aff6844ee03c.mp4",
+   "v2": "dc2dd06180577e80.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "313694b7ed",
+   "prompt_idx": 44,
+   "prompt": "a hat to the left of a basket and to the right of a frisbee",
+   "v1": "7b204ee758a8af6c.mp4",
+   "v2": "d7af4a44840a4fb1.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "30c19f1eb6",
+   "prompt_idx": 46,
+   "prompt": "a mirror to the left of a soap and in front of a towel",
+   "v1": "b4bc921afe7d315a.mp4",
+   "v2": "22348ee752b0c38b.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "717f69d7f4",
+   "prompt_idx": 47,
+   "prompt": "a cup to the left of a napkin and to the right of a sandwich",
+   "v1": "3ae5ab7f7c89a1ec.mp4",
+   "v2": "c9bf66d1c92d86f5.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "b0fbe2f5a8",
+   "prompt_idx": 48,
+   "prompt": "a flower pot to the right of a tree and behind a bench",
+   "v1": "f2473c3bab98cd5c.mp4",
+   "v2": "9716174694e6fab3.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "6328b1841a",
+   "prompt_idx": 49,
+   "prompt": "a bed to the right of a teddy bear and behind an alarm clock",
+   "v1": "1b2e6b25055a84dd.mp4",
+   "v2": "0a504073a1061c9f.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "c534da6b3d",
+   "prompt_idx": 50,
+   "prompt": "a napkin to the left of a plate and to the right of a bowl",
+   "v1": "147412aa28064e16.mp4",
+   "v2": "4e5f2320dfa1ee23.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "8ad5f84b96",
+   "prompt_idx": 51,
+   "prompt": "a toothbrush to the left of a mirror and in front of a towel",
+   "v1": "489f79aa416103d6.mp4",
+   "v2": "1880a7345157d394.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "219e24c776",
+   "prompt_idx": 52,
+   "prompt": "a pot above a knife and in front of a cutting board",
+   "v1": "f302d51964235aa5.mp4",
+   "v2": "f525235d5346c7d0.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "c4e443773f",
+   "prompt_idx": 53,
+   "prompt": "a clock to the left of a folder and to the right of a monitor",
+   "v1": "a4fe0cf18b1e9127.mp4",
+   "v2": "4c3c5aa1c24954f3.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "0765c3a85a",
+   "prompt_idx": 54,
+   "prompt": "a sink to the left of a mirror and in front of a soap",
+   "v1": "ff3bc51298e7a06d.mp4",
+   "v2": "c12aefdf07b404ca.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "6096af9e23",
+   "prompt_idx": 55,
+   "prompt": "a keyboard to the right of a notebook and behind a laptop",
+   "v1": "24b8604703da8e01.mp4",
+   "v2": "e9bbe301f8a041f9.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "292faf151a",
+   "prompt_idx": 56,
+   "prompt": "a lamp to the left of a bed and in front of an alarm clock",
+   "v1": "59e3a236a8a8384f.mp4",
+   "v2": "d2a21602e08fce92.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "36931221c6",
+   "prompt_idx": 57,
+   "prompt": "a pillow to the right of a rug and in front of a cat",
+   "v1": "70c87bff3602f542.mp4",
+   "v2": "0cd1486f1572faf9.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "a3633e21e8",
+   "prompt_idx": 58,
+   "prompt": "an alarm clock above a bed and to the left of a teddy bear",
+   "v1": "01e1c90096a3ee4a.mp4",
+   "v2": "802af53a4c7baab4.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "5da69627f1",
+   "prompt_idx": 59,
+   "prompt": "a cat above a rug and in front of a remote",
+   "v1": "ffe2574c1093ee48.mp4",
+   "v2": "c2b247e03bef48f5.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "da7b6f8491",
+   "prompt_idx": 60,
+   "prompt": "a watering can to the right of a bench and behind a tree",
+   "v1": "a0c54f22806e0f5b.mp4",
+   "v2": "397df12d03d26b63.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "1d9290363d",
+   "prompt_idx": 61,
+   "prompt": "a sofa to the right of a pillow and in front of a plant",
+   "v1": "874b3ce5599b4c0a.mp4",
+   "v2": "2cb8adcd78673a20.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "1c906a90ec",
+   "prompt_idx": 62,
+   "prompt": "a sofa to the right of a pillow and behind a television",
+   "v1": "c7b1d8252105443d.mp4",
+   "v2": "f7e4b707abd019a1.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "38f6fc5e0a",
+   "prompt_idx": 63,
+   "prompt": "a sink above a towel and in front of a mirror",
+   "v1": "0577a5dd62d40ed0.mp4",
+   "v2": "8383b817ac3eaae1.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "e4e078ad93",
+   "prompt_idx": 64,
+   "prompt": "a sandwich above a bowl and to the left of a spoon",
+   "v1": "b137264cc87405e1.mp4",
+   "v2": "8a536456b40a8074.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "00c2a96cef",
+   "prompt_idx": 65,
+   "prompt": "a pen below a clock and to the right of a folder",
+   "v1": "c6ace93d9cef4bf4.mp4",
+   "v2": "641e4946b719700a.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "6b7a16dcba",
+   "prompt_idx": 66,
+   "prompt": "a bicycle to the right of a bench and behind a mailbox",
+   "v1": "7d6d048ef6e4e685.mp4",
+   "v2": "ceee338ee4e466e4.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "4e8a452bd1",
+   "prompt_idx": 67,
+   "prompt": "a printer to the left of a chair and in front of a pen",
+   "v1": "3a95cbaed22983dc.mp4",
+   "v2": "f24a68b8f5be5a1c.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "2a6974ebe7",
+   "prompt_idx": 68,
+   "prompt": "a phone to the left of a keyboard and behind a notebook",
+   "v1": "83dd37b9f7cb5b03.mp4",
+   "v2": "5c8c0f30ae2c26e7.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "7d4f5bd449",
+   "prompt_idx": 69,
+   "prompt": "a plant below a rug and to the right of a cat",
+   "v1": "4b034500aedb923d.mp4",
+   "v2": "0601144a0a3fb214.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "1253d5b6a8",
+   "prompt_idx": 70,
+   "prompt": "a jar to the left of a knife and in front of a kettle",
+   "v1": "27be6773925dbd06.mp4",
+   "v2": "b65ab6eac8f44d22.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "fd950b4255",
+   "prompt_idx": 71,
+   "prompt": "a fence below a bird and to the right of a watering can",
+   "v1": "ba45316be4ce9007.mp4",
+   "v2": "894a8bd66dd7cbc3.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "e1d203af3a",
+   "prompt_idx": 72,
+   "prompt": "an alarm clock to the right of a pillow and in front of a bed",
+   "v1": "b099a6cfd9a9c0a3.mp4",
+   "v2": "023cf91e45a977a9.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "500945b6df",
+   "prompt_idx": 73,
+   "prompt": "a bottle to the right of a blanket and behind a frisbee",
+   "v1": "68e46841128a48f8.mp4",
+   "v2": "265366d62d2d3c64.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "7caed42ffa",
+   "prompt_idx": 74,
+   "prompt": "a sink to the right of a towel and in front of a mirror",
+   "v1": "9033b283e24522b4.mp4",
+   "v2": "52962e21182f9664.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "794acd0c6e",
+   "prompt_idx": 75,
+   "prompt": "a soap to the left of a toothbrush and to the right of a towel",
+   "v1": "ff7efd123b461430.mp4",
+   "v2": "484c39e254893f04.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "4721f26221",
+   "prompt_idx": 76,
+   "prompt": "a rug to the left of a remote and behind a cat",
+   "v1": "4e1aaf91ec19cb39.mp4",
+   "v2": "6ae6e81b60c04510.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "70ac116355",
+   "prompt_idx": 77,
+   "prompt": "a blanket above a bottle and to the left of a basket",
+   "v1": "cd72caddb6b0b72a.mp4",
+   "v2": "ce75428fac911bf0.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "3c34a0278f",
+   "prompt_idx": 78,
+   "prompt": "a cutting board to the right of a basket and behind a knife",
+   "v1": "cdd41ac7eac5dccc.mp4",
+   "v2": "0ad80c4624129cb0.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "807ddfe7b7",
+   "prompt_idx": 79,
+   "prompt": "a keyboard above a phone and in front of a notebook",
+   "v1": "7e646c05c9ea6b54.mp4",
+   "v2": "00b3c2d7571b7cbc.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "17b92f1770",
+   "prompt_idx": 80,
+   "prompt": "a mug to the left of a lamp and to the right of a phone",
+   "v1": "c25d0874d48985e3.mp4",
+   "v2": "ce2c6527416027d7.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "8d6ff47c74",
+   "prompt_idx": 81,
+   "prompt": "a printer to the right of a chair and behind a pen",
+   "v1": "41bba71f71e6efe9.mp4",
+   "v2": "2b84bfeb6bfd6803.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "12671302b5",
+   "prompt_idx": 82,
+   "prompt": "a phone to the right of a lamp and behind a notebook",
+   "v1": "462a17a5b1ce4bd4.mp4",
+   "v2": "b32e62b2341465d5.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "63e86a23dc",
+   "prompt_idx": 83,
+   "prompt": "a towel above a soap and to the left of a basket",
+   "v1": "103e4c5a1c4002bb.mp4",
+   "v2": "df6ae42e859227c0.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "fd66f9ba38",
+   "prompt_idx": 84,
+   "prompt": "a bench to the left of a trash can and in front of a street lamp",
+   "v1": "c4a8cd2d62803465.mp4",
+   "v2": "b8a9c67e61ea53ce.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "b0b3eb95e1",
+   "prompt_idx": 85,
+   "prompt": "a towel below a sink and to the right of a basket",
+   "v1": "e32a0c719f69d392.mp4",
+   "v2": "50fce27875df1932.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "b5b2bcabc5",
+   "prompt_idx": 86,
+   "prompt": "a bed to the right of a slipper and in front of a teddy bear",
+   "v1": "9c4133c15e18eb40.mp4",
+   "v2": "f05f08aa7728a06b.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "4e0eef60a1",
+   "prompt_idx": 87,
+   "prompt": "a mailbox to the left of a bench and in front of a bicycle",
+   "v1": "2e52b1b56a303736.mp4",
+   "v2": "86d1138b0546633f.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "87b3802164",
+   "prompt_idx": 88,
+   "prompt": "a street lamp to the right of a trash can and in front of a bench",
+   "v1": "ec8b01f8b4dc1d11.mp4",
+   "v2": "ad8f39c48f65c618.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "a1da360847",
+   "prompt_idx": 89,
+   "prompt": "a jar to the left of a kettle and in front of a pot",
+   "v1": "7cbfb87bdc32dd7d.mp4",
+   "v2": "6d8b4ca04984ba02.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "e3b44fdac0",
+   "prompt_idx": 90,
+   "prompt": "a lamp to the left of a notebook and behind a keyboard",
+   "v1": "f415a156f6ffe4ea.mp4",
+   "v2": "fb266510c7ef92a5.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "3f7a7c0a36",
+   "prompt_idx": 91,
+   "prompt": "a mug to the left of a laptop and in front of a book",
+   "v1": "0793c69b29304c4a.mp4",
+   "v2": "989bd2130f049cb9.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "06b71e35e9",
+   "prompt_idx": 92,
+   "prompt": "a mug below a keyboard and to the right of a lamp",
+   "v1": "2313564fea13ab7d.mp4",
+   "v2": "f6a1f9bad6d7942a.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "5bbc7a8215",
+   "prompt_idx": 93,
+   "prompt": "a bench to the right of a street lamp and in front of a mailbox",
+   "v1": "ba77396212b21f17.mp4",
+   "v2": "a438b7c16a146f95.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "253a5df41b",
+   "prompt_idx": 94,
+   "prompt": "a bird to the right of a fence and behind a flower pot",
+   "v1": "888c1750c9325fa0.mp4",
+   "v2": "6698e2d3f1c5d902.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "74094805c2",
+   "prompt_idx": 95,
+   "prompt": "a remote to the left of a sofa and to the right of a cat",
+   "v1": "ab12573b5fee1079.mp4",
+   "v2": "b2ff63edfcff50e1.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "35f6bcc909",
+   "prompt_idx": 96,
+   "prompt": "a remote below a plant and to the right of a cat",
+   "v1": "a8e39d4712d0b77e.mp4",
+   "v2": "338f246e6fe01a27.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "7e99696bc7",
+   "prompt_idx": 97,
+   "prompt": "a flower pot below a bird and to the right of a fence",
+   "v1": "ef86b9175756a9ef.mp4",
+   "v2": "fca85e425dcd0fe8.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "3f1048db91",
+   "prompt_idx": 98,
+   "prompt": "a plate below a bottle and to the right of a spoon",
+   "v1": "8880e27b2c5408a1.mp4",
+   "v2": "8984c1af2183ae6e.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "32e1466883",
+   "prompt_idx": 99,
+   "prompt": "a knife to the left of a cutting board and behind a pot",
+   "v1": "5050a62cf0e511f4.mp4",
+   "v2": "57d6c020a2399ab1.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "8da98f727e",
+   "prompt_idx": 100,
+   "prompt": "a cat to the right of a rug and in front of a television",
+   "v1": "69efa1e37c2f9fe2.mp4",
+   "v2": "41fdb01e6bffaacc.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "71c9fc2f82",
+   "prompt_idx": 101,
+   "prompt": "a lamp above a pillow and to the left of a bed",
+   "v1": "3a010ea1c0956cbb.mp4",
+   "v2": "76a57f4d54f030f1.mp4",
+   "group": "77fe6d",
+   "clean": false
+  },
+  {
+   "id": "b52ca5278f",
+   "prompt_idx": 102,
+   "prompt": "a lamp to the left of a phone and to the right of a notebook",
+   "v1": "b9849a8be17b3e4b.mp4",
+   "v2": "d426c6a4888fcd17.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "7f9fe80bfa",
+   "prompt_idx": 103,
+   "prompt": "a knife to the right of a basket and in front of a pot",
+   "v1": "a67cb5d417c6974c.mp4",
+   "v2": "daaa21a831ae47b1.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "c7b90d8a1a",
+   "prompt_idx": 104,
+   "prompt": "a basket to the right of a frisbee and in front of a bottle",
+   "v1": "cb2e5594ad36f5c2.mp4",
+   "v2": "8184b689f0276544.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "77495c9957",
+   "prompt_idx": 105,
+   "prompt": "a spoon to the left of a napkin and to the right of a plate",
+   "v1": "521a5837a45a95e3.mp4",
+   "v2": "5d0ffe72adbc30d5.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "6993644039",
+   "prompt_idx": 106,
+   "prompt": "a napkin to the right of a spoon and in front of a bottle",
+   "v1": "ec836506640b4677.mp4",
+   "v2": "2179e12906068c62.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "7265f8ee55",
+   "prompt_idx": 107,
+   "prompt": "an alarm clock to the right of a teddy bear and behind a bed",
+   "v1": "7c8c22498ac6e2b2.mp4",
+   "v2": "b8bf7c61cc006d7d.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "a967588337",
+   "prompt_idx": 108,
+   "prompt": "a hat above a basket and in front of a bottle",
+   "v1": "7452b1456bbdf439.mp4",
+   "v2": "1368031ad1a5d2c7.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "158cf85654",
+   "prompt_idx": 109,
+   "prompt": "a street lamp to the left of a bench and in front of a trash can",
+   "v1": "ef7469b895eb05b8.mp4",
+   "v2": "161be51d9d1655ab.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "fe626a5cbe",
+   "prompt_idx": 110,
+   "prompt": "a clock below a printer and to the right of a chair",
+   "v1": "cbaff71461795aa6.mp4",
+   "v2": "12c1d61636937512.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "e1051e1ac9",
+   "prompt_idx": 111,
+   "prompt": "a pillow below a plant and to the right of a cat",
+   "v1": "dfa542dce7a304ab.mp4",
+   "v2": "b6b750b2b6c054d7.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "aa56995e41",
+   "prompt_idx": 112,
+   "prompt": "a toothbrush above a towel and to the left of a mirror",
+   "v1": "df34b83a8d76d55a.mp4",
+   "v2": "741eee62615c90c1.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "69b3321a8a",
+   "prompt_idx": 113,
+   "prompt": "a pot below a basket and to the right of a cutting board",
+   "v1": "af47f029d1d18fff.mp4",
+   "v2": "b88b6ea384aeb13d.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "4a9a0d5cb7",
+   "prompt_idx": 114,
+   "prompt": "a bench below a dog and to the right of a mailbox",
+   "v1": "4f7d34147f57317c.mp4",
+   "v2": "ee906f2f24a8e3f4.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "81eec05639",
+   "prompt_idx": 115,
+   "prompt": "a kettle to the right of a jar and in front of a pot",
+   "v1": "48f0a593a02bc450.mp4",
+   "v2": "0b314fcf6f69d25e.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "8bdad05dea",
+   "prompt_idx": 116,
+   "prompt": "a plate to the left of a sandwich and in front of a spoon",
+   "v1": "ee1ae885ca0d8000.mp4",
+   "v2": "cab877f1b7b04ebb.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "7b535205e8",
+   "prompt_idx": 117,
+   "prompt": "a dog above a bench and to the left of a bicycle",
+   "v1": "73a5fde33701d0f7.mp4",
+   "v2": "eeffbf02901a0949.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "4ef9c921ae",
+   "prompt_idx": 118,
+   "prompt": "a bench to the right of a tree and behind a bird",
+   "v1": "fac43cd70134f5fb.mp4",
+   "v2": "5785680e6e045150.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "2b576f3afd",
+   "prompt_idx": 119,
+   "prompt": "a mirror below a soap and to the right of a basket",
+   "v1": "83062fad7e19c641.mp4",
+   "v2": "9a5d95b963039b63.mp4",
+   "group": "77fe6d",
+   "clean": true
+  },
+  {
+   "id": "b4de282be5",
+   "prompt_idx": 0,
+   "prompt": "a laptop to the left of a mug and to the right of a lamp",
+   "v1": "164b3c19af4e78f5.mp4",
+   "v2": "1fb474223b2d5d14.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "31ab2c4502",
+   "prompt_idx": 1,
+   "prompt": "a plate to the left of a cup and in front of a bottle",
+   "v1": "1006e5d3bf309ec4.mp4",
+   "v2": "3495806b97c5251c.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "4d88d6896d",
+   "prompt_idx": 2,
+   "prompt": "a book below a pen and to the left of a clock",
+   "v1": "316204a788b17d96.mp4",
+   "v2": "e8ed0f50d58b06b8.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "14618c170b",
+   "prompt_idx": 3,
+   "prompt": "a cat to the left of a dog and to the right of a ball",
+   "v1": "379835fce17c0404.mp4",
+   "v2": "a5855d8e7c72a66c.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "7675e0f1b7",
+   "prompt_idx": 4,
+   "prompt": "a cup to the right of a plate and to the left of a fork",
+   "v1": "2326fdfca657aed1.mp4",
+   "v2": "5e0da56cd3f8747b.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "c33f0f8b6d",
+   "prompt_idx": 5,
+   "prompt": "a keyboard to the left of a mouse and below a monitor",
+   "v1": "0db8462e06766fca.mp4",
+   "v2": "c084c804b64f5c2f.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "8633051453",
+   "prompt_idx": 6,
+   "prompt": "a vase to the left of a book and to the right of a lamp",
+   "v1": "5801ff5bd77ce97a.mp4",
+   "v2": "82f57255eca3977c.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "c6c32f683c",
+   "prompt_idx": 7,
+   "prompt": "a bottle behind a glass and to the left of a plate",
+   "v1": "95952ce2e3c97972.mp4",
+   "v2": "289da56b5e058d2d.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "bd2bc3990a",
+   "prompt_idx": 8,
+   "prompt": "an apple to the left of a banana and in front of a bowl",
+   "v1": "322a76645f4e74f2.mp4",
+   "v2": "246e6a3811613db8.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "77814f61ff",
+   "prompt_idx": 9,
+   "prompt": "a car to the left of a tree and to the right of a person",
+   "v1": "40d46ffdf9bb42ed.mp4",
+   "v2": "360fd6421359bf0a.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "6a0adca3ab",
+   "prompt_idx": 10,
+   "prompt": "a bicycle to the left of a bench and to the right of a dog",
+   "v1": "1a64b8b6d04a6ea9.mp4",
+   "v2": "7f07bd2a4107ecff.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "805bbe1b69",
+   "prompt_idx": 11,
+   "prompt": "a phone above a book and to the right of a cup",
+   "v1": "91ddc09f8bc9f230.mp4",
+   "v2": "f40268c5719a40f8.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "379881d8a5",
+   "prompt_idx": 12,
+   "prompt": "a spoon to the left of a bowl and to the right of a cup",
+   "v1": "9eec9f0bd7380ca4.mp4",
+   "v2": "411cde9dd5ad6bd3.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "884b4d304e",
+   "prompt_idx": 13,
+   "prompt": "a hat above a bag and to the left of a shoe",
+   "v1": "562512e815ab468a.mp4",
+   "v2": "21de33332405928d.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "0a2ebf1795",
+   "prompt_idx": 14,
+   "prompt": "a pillow above a sofa and in front of a cat",
+   "v1": "25a445ac1b9cc683.mp4",
+   "v2": "93bd6af09f019d99.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "f7b0b47271",
+   "prompt_idx": 15,
+   "prompt": "a bird above a fence and behind a cat",
+   "v1": "1ff91bda1cd3666e.mp4",
+   "v2": "97307cb55a48668f.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "7668660183",
+   "prompt_idx": 16,
+   "prompt": "a horse behind a fence and to the left of a tree",
+   "v1": "8461da9836e837b3.mp4",
+   "v2": "1649b903ab7314d0.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "92076faf9e",
+   "prompt_idx": 17,
+   "prompt": "a chair to the left of a table and behind a laptop",
+   "v1": "543df43f8597d97e.mp4",
+   "v2": "dbc7f251cfca5690.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "f9c33ba3e4",
+   "prompt_idx": 18,
+   "prompt": "a teddy bear to the left of a pillow and in front of a book",
+   "v1": "8c1591cb817c674c.mp4",
+   "v2": "2e95f903cb77e620.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "37b566c408",
+   "prompt_idx": 19,
+   "prompt": "a banana to the left of an apple and above a plate",
+   "v1": "993c8b95976e05ce.mp4",
+   "v2": "209b5445026fdbcd.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "9735447663",
+   "prompt_idx": 20,
+   "prompt": "a dog to the left of a frisbee and behind a tree",
+   "v1": "f6c7b2dcbbdd99be.mp4",
+   "v2": "6322450ac70452ea.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "b6f49e6897",
+   "prompt_idx": 21,
+   "prompt": "a mug to the left of a laptop and in front of a phone",
+   "v1": "3103af9edea1fb8c.mp4",
+   "v2": "4cfcd9e71e8bdfba.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "12ee89ee6c",
+   "prompt_idx": 22,
+   "prompt": "a kite above a child and to the right of a tree",
+   "v1": "00d5053ca8c14d71.mp4",
+   "v2": "79c8fecaebcfa805.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "66e4b2b6fd",
+   "prompt_idx": 23,
+   "prompt": "a boat to the left of a dock and behind a bird",
+   "v1": "21aa90edfd447290.mp4",
+   "v2": "0daacc8f24c552f5.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "50ab1b3dab",
+   "prompt_idx": 24,
+   "prompt": "a candle above a plate and to the left of a cup",
+   "v1": "87af5445da81625c.mp4",
+   "v2": "ecbbfd1b5c695c0d.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "f7843a92f9",
+   "prompt_idx": 25,
+   "prompt": "a lamp above a desk and to the left of a chair",
+   "v1": "f15a0638c66f0f52.mp4",
+   "v2": "cffef8d4a2a86473.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "000a1e3daa",
+   "prompt_idx": 26,
+   "prompt": "a bowl to the right of a spoon and to the left of a napkin",
+   "v1": "8102d24b191d38b8.mp4",
+   "v2": "d08a94f7c5b9256e.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "6381d482da",
+   "prompt_idx": 27,
+   "prompt": "a bottle to the left of a cup and to the right of a bowl",
+   "v1": "9aadf89f8b65843f.mp4",
+   "v2": "763a4d31325eb620.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "c353923b9f",
+   "prompt_idx": 28,
+   "prompt": "a clock to the left of a picture and above a shelf",
+   "v1": "658b5797150c3b0b.mp4",
+   "v2": "c0d0425fed11ddfd.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "fce82a8243",
+   "prompt_idx": 29,
+   "prompt": "an umbrella above a bench and to the left of a dog",
+   "v1": "d67115f4425c46ee.mp4",
+   "v2": "9c2dcd4018ced087.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "92a2105cfb",
+   "prompt_idx": 30,
+   "prompt": "a cat in front of a basket and behind a window",
+   "v1": "1cff07f737324865.mp4",
+   "v2": "46ac066e828ce2f7.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "b151648b92",
+   "prompt_idx": 31,
+   "prompt": "a plate to the left of a knife and to the right of a fork",
+   "v1": "3cb5a34b2a8c719f.mp4",
+   "v2": "cc62c4d8b3616359.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "4bcf1af5ef",
+   "prompt_idx": 32,
+   "prompt": "a book to the left of a laptop and to the right of a mug",
+   "v1": "88593b9cb0e1a761.mp4",
+   "v2": "53d8feb7862a4cc7.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "9bedbc82b6",
+   "prompt_idx": 33,
+   "prompt": "an apple above a plate and to the right of a glass",
+   "v1": "664259bad6957e61.mp4",
+   "v2": "0505ad173e6cf421.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "7cc65eb890",
+   "prompt_idx": 34,
+   "prompt": "a ball to the left of a dog and behind a fence",
+   "v1": "7e1da40ec2b82fe0.mp4",
+   "v2": "ecf0355f73c80f78.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "fe1b528ff2",
+   "prompt_idx": 35,
+   "prompt": "a flower above a vase and in front of a table",
+   "v1": "3341ce7cad08f8f7.mp4",
+   "v2": "0eb0a927f7803822.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "ac2461cc3b",
+   "prompt_idx": 36,
+   "prompt": "a cup above a saucer and to the right of a spoon",
+   "v1": "34b07951cdaffbc6.mp4",
+   "v2": "3f4d15d0b83ff67e.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "4d3d432a23",
+   "prompt_idx": 37,
+   "prompt": "a bird in front of a branch and behind a sky",
+   "v1": "fff885e43f64e459.mp4",
+   "v2": "5132e00737833d84.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "0e192d34b4",
+   "prompt_idx": 38,
+   "prompt": "a shoe to the left of a mat and behind a door",
+   "v1": "8ad1eee2227d7402.mp4",
+   "v2": "3b6a92c19a5e57b2.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "b5f67105e6",
+   "prompt_idx": 39,
+   "prompt": "a sandwich above a plate and to the right of a cup",
+   "v1": "fed93e1c45756df1.mp4",
+   "v2": "39b63310780af612.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "5db4f63c30",
+   "prompt_idx": 40,
+   "prompt": "a teddy bear above a pillow and in front of a slipper",
+   "v1": "3ee47a90442ceeef.mp4",
+   "v2": "81688a2328484ffd.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "e6ff16ad23",
+   "prompt_idx": 41,
+   "prompt": "a frisbee above an apple and in front of a hat",
+   "v1": "1657d9718c726607.mp4",
+   "v2": "57c5e4945e830ea5.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "8711ab6414",
+   "prompt_idx": 42,
+   "prompt": "a basket to the right of a blanket and in front of a frisbee",
+   "v1": "6fb6f31a4fe8038b.mp4",
+   "v2": "e2c94c487ecad21a.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "a13602b399",
+   "prompt_idx": 43,
+   "prompt": "a kettle below a jar and to the right of a basket",
+   "v1": "e008bdbf64dca282.mp4",
+   "v2": "dc2dd06180577e80.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "3d70c5527d",
+   "prompt_idx": 44,
+   "prompt": "a hat to the left of a basket and to the right of a frisbee",
+   "v1": "4b3a296f1cdb5569.mp4",
+   "v2": "d7af4a44840a4fb1.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "1ef83bcc08",
+   "prompt_idx": 45,
+   "prompt": "a teddy bear to the left of a pillow and behind a bed",
+   "v1": "bafe77c2afda8a60.mp4",
+   "v2": "9a659ac020b550dc.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "c3cec20f36",
+   "prompt_idx": 46,
+   "prompt": "a mirror to the left of a soap and in front of a towel",
+   "v1": "b4bc921afe7d315a.mp4",
+   "v2": "9aed06af5dc28c0e.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "3269c563c8",
+   "prompt_idx": 47,
+   "prompt": "a cup to the left of a napkin and to the right of a sandwich",
+   "v1": "3ae5ab7f7c89a1ec.mp4",
+   "v2": "428b39d532021eb5.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "26b532d6db",
+   "prompt_idx": 48,
+   "prompt": "a flower pot to the right of a tree and behind a bench",
+   "v1": "7e3df706295cb1cf.mp4",
+   "v2": "f2473c3bab98cd5c.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "8b56d23f21",
+   "prompt_idx": 49,
+   "prompt": "a bed to the right of a teddy bear and behind an alarm clock",
+   "v1": "a6ab69c7c577c50d.mp4",
+   "v2": "1b2e6b25055a84dd.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "83105deb4d",
+   "prompt_idx": 50,
+   "prompt": "a napkin to the left of a plate and to the right of a bowl",
+   "v1": "0aced542f53d6963.mp4",
+   "v2": "4e5f2320dfa1ee23.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "43e564c8e2",
+   "prompt_idx": 51,
+   "prompt": "a toothbrush to the left of a mirror and in front of a towel",
+   "v1": "489f79aa416103d6.mp4",
+   "v2": "1fa5a594f36d4d75.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "b4cbe36481",
+   "prompt_idx": 52,
+   "prompt": "a pot above a knife and in front of a cutting board",
+   "v1": "00dd0ef49e7e1054.mp4",
+   "v2": "f302d51964235aa5.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "3e6e063d2a",
+   "prompt_idx": 53,
+   "prompt": "a clock to the left of a folder and to the right of a monitor",
+   "v1": "4c3c5aa1c24954f3.mp4",
+   "v2": "a06a54d7231ca11b.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "116de3d2ce",
+   "prompt_idx": 54,
+   "prompt": "a sink to the left of a mirror and in front of a soap",
+   "v1": "ff3bc51298e7a06d.mp4",
+   "v2": "3f52b6b3b59e33af.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "579125363a",
+   "prompt_idx": 55,
+   "prompt": "a keyboard to the right of a notebook and behind a laptop",
+   "v1": "e9bbe301f8a041f9.mp4",
+   "v2": "39dad505f850defd.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "2bd7ebebb4",
+   "prompt_idx": 56,
+   "prompt": "a lamp to the left of a bed and in front of an alarm clock",
+   "v1": "59e3a236a8a8384f.mp4",
+   "v2": "10d3d08e598eeb63.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "9635c859fa",
+   "prompt_idx": 57,
+   "prompt": "a pillow to the right of a rug and in front of a cat",
+   "v1": "70c87bff3602f542.mp4",
+   "v2": "abfc10ee43505db4.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "b0de4acf75",
+   "prompt_idx": 58,
+   "prompt": "an alarm clock above a bed and to the left of a teddy bear",
+   "v1": "90f63e67880c4336.mp4",
+   "v2": "01e1c90096a3ee4a.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "75115c72d3",
+   "prompt_idx": 59,
+   "prompt": "a cat above a rug and in front of a remote",
+   "v1": "a52409cbf51ad673.mp4",
+   "v2": "c2b247e03bef48f5.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "65832ff789",
+   "prompt_idx": 60,
+   "prompt": "a watering can to the right of a bench and behind a tree",
+   "v1": "cc2d694977070b8a.mp4",
+   "v2": "397df12d03d26b63.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "39c29ed5c9",
+   "prompt_idx": 61,
+   "prompt": "a sofa to the right of a pillow and in front of a plant",
+   "v1": "87bb88a4ff979055.mp4",
+   "v2": "2cb8adcd78673a20.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "08ff4f8791",
+   "prompt_idx": 62,
+   "prompt": "a sofa to the right of a pillow and behind a television",
+   "v1": "2842c09d897688de.mp4",
+   "v2": "c7b1d8252105443d.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "2aec69c510",
+   "prompt_idx": 63,
+   "prompt": "a sink above a towel and in front of a mirror",
+   "v1": "0577a5dd62d40ed0.mp4",
+   "v2": "f16f4e13cebf7336.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "6ce2fce290",
+   "prompt_idx": 64,
+   "prompt": "a sandwich above a bowl and to the left of a spoon",
+   "v1": "8a536456b40a8074.mp4",
+   "v2": "fd0fb02d775d66ee.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "66d8fb284d",
+   "prompt_idx": 65,
+   "prompt": "a pen below a clock and to the right of a folder",
+   "v1": "b7b94732e845fee1.mp4",
+   "v2": "641e4946b719700a.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "36bf79a3f0",
+   "prompt_idx": 66,
+   "prompt": "a bicycle to the right of a bench and behind a mailbox",
+   "v1": "7d6d048ef6e4e685.mp4",
+   "v2": "874f7d4ed329f938.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "1d372f081e",
+   "prompt_idx": 67,
+   "prompt": "a printer to the left of a chair and in front of a pen",
+   "v1": "f24a68b8f5be5a1c.mp4",
+   "v2": "7767143386cb1f4a.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "71cb0e9544",
+   "prompt_idx": 68,
+   "prompt": "a phone to the left of a keyboard and behind a notebook",
+   "v1": "5c8c0f30ae2c26e7.mp4",
+   "v2": "007be28f9b76c1c4.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "5d4d3d8a9e",
+   "prompt_idx": 69,
+   "prompt": "a plant below a rug and to the right of a cat",
+   "v1": "0601144a0a3fb214.mp4",
+   "v2": "d63ec0fee9047251.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "3fcab47b91",
+   "prompt_idx": 70,
+   "prompt": "a jar to the left of a knife and in front of a kettle",
+   "v1": "a806cf396ed1f749.mp4",
+   "v2": "27be6773925dbd06.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "40a765004a",
+   "prompt_idx": 71,
+   "prompt": "a fence below a bird and to the right of a watering can",
+   "v1": "894a8bd66dd7cbc3.mp4",
+   "v2": "a4c421668f2e15d1.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "cf5d8ce86d",
+   "prompt_idx": 72,
+   "prompt": "an alarm clock to the right of a pillow and in front of a bed",
+   "v1": "fa682d9ccc4b97ae.mp4",
+   "v2": "b099a6cfd9a9c0a3.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "002cd94923",
+   "prompt_idx": 73,
+   "prompt": "a bottle to the right of a blanket and behind a frisbee",
+   "v1": "d45718adf051874c.mp4",
+   "v2": "265366d62d2d3c64.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "a091bb897c",
+   "prompt_idx": 74,
+   "prompt": "a sink to the right of a towel and in front of a mirror",
+   "v1": "9033b283e24522b4.mp4",
+   "v2": "5c8611d4a39d5eab.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "722f49e9d2",
+   "prompt_idx": 75,
+   "prompt": "a soap to the left of a toothbrush and to the right of a towel",
+   "v1": "ff7efd123b461430.mp4",
+   "v2": "33d4fd58cd231138.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "e8774815a1",
+   "prompt_idx": 76,
+   "prompt": "a rug to the left of a remote and behind a cat",
+   "v1": "d52f375d0e75d972.mp4",
+   "v2": "6ae6e81b60c04510.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "b3c21fa6eb",
+   "prompt_idx": 77,
+   "prompt": "a blanket above a bottle and to the left of a basket",
+   "v1": "f8b9302469f9d8d5.mp4",
+   "v2": "ce75428fac911bf0.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "97004433a9",
+   "prompt_idx": 78,
+   "prompt": "a cutting board to the right of a basket and behind a knife",
+   "v1": "5737544f168ebc6c.mp4",
+   "v2": "0ad80c4624129cb0.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "5743d23b3d",
+   "prompt_idx": 79,
+   "prompt": "a keyboard above a phone and in front of a notebook",
+   "v1": "5a2cd8b2fdf9e0f1.mp4",
+   "v2": "00b3c2d7571b7cbc.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "48a1d53898",
+   "prompt_idx": 80,
+   "prompt": "a mug to the left of a lamp and to the right of a phone",
+   "v1": "c25d0874d48985e3.mp4",
+   "v2": "51aa6fa5af9fa67b.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "a250c9a669",
+   "prompt_idx": 81,
+   "prompt": "a printer to the right of a chair and behind a pen",
+   "v1": "45c5af966d4b7d04.mp4",
+   "v2": "41bba71f71e6efe9.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "e372844975",
+   "prompt_idx": 82,
+   "prompt": "a phone to the right of a lamp and behind a notebook",
+   "v1": "b7ccaa5fe6d666d7.mp4",
+   "v2": "b32e62b2341465d5.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "af427e2853",
+   "prompt_idx": 83,
+   "prompt": "a towel above a soap and to the left of a basket",
+   "v1": "38636da4b229bd78.mp4",
+   "v2": "103e4c5a1c4002bb.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "bf61884582",
+   "prompt_idx": 84,
+   "prompt": "a bench to the left of a trash can and in front of a street lamp",
+   "v1": "c4a8cd2d62803465.mp4",
+   "v2": "307c82a05062743e.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "83b642c60a",
+   "prompt_idx": 85,
+   "prompt": "a towel below a sink and to the right of a basket",
+   "v1": "50fce27875df1932.mp4",
+   "v2": "cfea91051b945ec7.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "cbd36c6644",
+   "prompt_idx": 86,
+   "prompt": "a bed to the right of a slipper and in front of a teddy bear",
+   "v1": "f05f08aa7728a06b.mp4",
+   "v2": "26f4db15190dda6a.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "226af49a04",
+   "prompt_idx": 87,
+   "prompt": "a mailbox to the left of a bench and in front of a bicycle",
+   "v1": "86d1138b0546633f.mp4",
+   "v2": "eaff4dcafa6bd92f.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "8dcc2362eb",
+   "prompt_idx": 88,
+   "prompt": "a street lamp to the right of a trash can and in front of a bench",
+   "v1": "e9779980bb473d96.mp4",
+   "v2": "ec8b01f8b4dc1d11.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "0adf878911",
+   "prompt_idx": 89,
+   "prompt": "a jar to the left of a kettle and in front of a pot",
+   "v1": "5029e2a807f526f9.mp4",
+   "v2": "6d8b4ca04984ba02.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "6b96d96ead",
+   "prompt_idx": 90,
+   "prompt": "a lamp to the left of a notebook and behind a keyboard",
+   "v1": "56248d4f4a5e657a.mp4",
+   "v2": "f415a156f6ffe4ea.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "124c527cca",
+   "prompt_idx": 91,
+   "prompt": "a mug to the left of a laptop and in front of a book",
+   "v1": "0793c69b29304c4a.mp4",
+   "v2": "cdb0e0a4a6c3941f.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "61db81d4fd",
+   "prompt_idx": 92,
+   "prompt": "a mug below a keyboard and to the right of a lamp",
+   "v1": "48c457f350a53295.mp4",
+   "v2": "f6a1f9bad6d7942a.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "62649f1fb5",
+   "prompt_idx": 93,
+   "prompt": "a bench to the right of a street lamp and in front of a mailbox",
+   "v1": "eacfd853c33e7165.mp4",
+   "v2": "a438b7c16a146f95.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "5ab5dfe192",
+   "prompt_idx": 94,
+   "prompt": "a bird to the right of a fence and behind a flower pot",
+   "v1": "6698e2d3f1c5d902.mp4",
+   "v2": "b40d2265d0dc2835.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "ffae7340d6",
+   "prompt_idx": 95,
+   "prompt": "a remote to the left of a sofa and to the right of a cat",
+   "v1": "ab12573b5fee1079.mp4",
+   "v2": "9025054764004f91.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "169a4a58a2",
+   "prompt_idx": 96,
+   "prompt": "a remote below a plant and to the right of a cat",
+   "v1": "338f246e6fe01a27.mp4",
+   "v2": "f3f5e6168c22d2ab.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "6cf3e77671",
+   "prompt_idx": 97,
+   "prompt": "a flower pot below a bird and to the right of a fence",
+   "v1": "e15b7ad50d70b10b.mp4",
+   "v2": "fca85e425dcd0fe8.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "46232c10b9",
+   "prompt_idx": 98,
+   "prompt": "a plate below a bottle and to the right of a spoon",
+   "v1": "23437f9daf7aa38d.mp4",
+   "v2": "8984c1af2183ae6e.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "560d4fcd6d",
+   "prompt_idx": 99,
+   "prompt": "a knife to the left of a cutting board and behind a pot",
+   "v1": "a087ff3bdd391637.mp4",
+   "v2": "57d6c020a2399ab1.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "91f6b30c8e",
+   "prompt_idx": 100,
+   "prompt": "a cat to the right of a rug and in front of a television",
+   "v1": "69efa1e37c2f9fe2.mp4",
+   "v2": "6f9375cba9bf1047.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "f140e7c1a4",
+   "prompt_idx": 101,
+   "prompt": "a lamp above a pillow and to the left of a bed",
+   "v1": "3a010ea1c0956cbb.mp4",
+   "v2": "dcf2ae0796ef3cf6.mp4",
+   "group": "935e0a",
+   "clean": false
+  },
+  {
+   "id": "49eb11eaf3",
+   "prompt_idx": 102,
+   "prompt": "a lamp to the left of a phone and to the right of a notebook",
+   "v1": "ece853c0edcfeb31.mp4",
+   "v2": "d426c6a4888fcd17.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "6b8186105b",
+   "prompt_idx": 103,
+   "prompt": "a knife to the right of a basket and in front of a pot",
+   "v1": "992b058dc7db2a8d.mp4",
+   "v2": "a67cb5d417c6974c.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "21e772b5b2",
+   "prompt_idx": 104,
+   "prompt": "a basket to the right of a frisbee and in front of a bottle",
+   "v1": "cb2e5594ad36f5c2.mp4",
+   "v2": "0769f62390082d9d.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "f262b652e9",
+   "prompt_idx": 105,
+   "prompt": "a spoon to the left of a napkin and to the right of a plate",
+   "v1": "e8d7bf4112897acf.mp4",
+   "v2": "5d0ffe72adbc30d5.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "633752e6f8",
+   "prompt_idx": 106,
+   "prompt": "a napkin to the right of a spoon and in front of a bottle",
+   "v1": "2179e12906068c62.mp4",
+   "v2": "933745992ccb9c5b.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "75329794fc",
+   "prompt_idx": 107,
+   "prompt": "an alarm clock to the right of a teddy bear and behind a bed",
+   "v1": "b8bf7c61cc006d7d.mp4",
+   "v2": "06915b69a9d8a03a.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "a46a9182ae",
+   "prompt_idx": 108,
+   "prompt": "a hat above a basket and in front of a bottle",
+   "v1": "1368031ad1a5d2c7.mp4",
+   "v2": "614e9567f4da0ff2.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "fe5d136ebc",
+   "prompt_idx": 109,
+   "prompt": "a street lamp to the left of a bench and in front of a trash can",
+   "v1": "ef7469b895eb05b8.mp4",
+   "v2": "a4c2db591fc882fa.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "ab8f4ef1d2",
+   "prompt_idx": 110,
+   "prompt": "a clock below a printer and to the right of a chair",
+   "v1": "cbaff71461795aa6.mp4",
+   "v2": "cf8f0144aa0af41f.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "b9b61cdea0",
+   "prompt_idx": 111,
+   "prompt": "a pillow below a plant and to the right of a cat",
+   "v1": "b6b750b2b6c054d7.mp4",
+   "v2": "7a025ae85183e1a0.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "3660bbd83c",
+   "prompt_idx": 112,
+   "prompt": "a toothbrush above a towel and to the left of a mirror",
+   "v1": "741eee62615c90c1.mp4",
+   "v2": "9357889c17a87556.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "2c561b2d00",
+   "prompt_idx": 113,
+   "prompt": "a pot below a basket and to the right of a cutting board",
+   "v1": "af47f029d1d18fff.mp4",
+   "v2": "6b7dc8f7fe450fa2.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "455fa65125",
+   "prompt_idx": 114,
+   "prompt": "a bench below a dog and to the right of a mailbox",
+   "v1": "ffdd46e4b39c3478.mp4",
+   "v2": "ee906f2f24a8e3f4.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "f707e21c2e",
+   "prompt_idx": 115,
+   "prompt": "a kettle to the right of a jar and in front of a pot",
+   "v1": "0b314fcf6f69d25e.mp4",
+   "v2": "6d0888aedc4be9d5.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "98482c5a27",
+   "prompt_idx": 116,
+   "prompt": "a plate to the left of a sandwich and in front of a spoon",
+   "v1": "32dfc8c8fcde367e.mp4",
+   "v2": "ee1ae885ca0d8000.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "a4c29afba5",
+   "prompt_idx": 117,
+   "prompt": "a dog above a bench and to the left of a bicycle",
+   "v1": "977de49827944d4e.mp4",
+   "v2": "73a5fde33701d0f7.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "6c186bd2e1",
+   "prompt_idx": 118,
+   "prompt": "a bench to the right of a tree and behind a bird",
+   "v1": "80de7ace88ab0bfb.mp4",
+   "v2": "fac43cd70134f5fb.mp4",
+   "group": "935e0a",
+   "clean": true
+  },
+  {
+   "id": "3f9e7cb6f0",
+   "prompt_idx": 119,
+   "prompt": "a mirror below a soap and to the right of a basket",
+   "v1": "9a5d95b963039b63.mp4",
+   "v2": "cb30545e3735c10f.mp4",
+   "group": "935e0a",
+   "clean": true
   }
  ]
 }
